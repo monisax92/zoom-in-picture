@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #d06fa0;
+	background-image: conic-gradient(
+		rgb(255, 119, 0) 0%,
+		rgb(195, 167, 116) 20%,
+		rgb(166, 202, 227) 30%,
+		rgb(0, 255, 42) 60%,
+		rgb(195, 116, 185) 80%,
+		rgb(255, 119, 0) 100%
+	);
+}
+
+.img-box {
+	border-radius: 5px;
+	overflow: hidden;
+	height: 50vh;
+	width: 50vh;
+	box-shadow: 0 0 10px 5px rgb(59, 59, 59);
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.2s;
+}
+
+.zoom-in {
+	cursor: zoom-in;
+	transform: scale(2);
+}
